@@ -1,0 +1,665 @@
+18:42:52 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:43:08 INFO  : XSDB server has started successfully.
+18:43:19 INFO  : Processing command line option -hwspec D:/Research/AES/project_1.sdk/design_1_wrapper.hdf.
+20:33:56 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1473174198841,  Project:1473167496005
+20:33:56 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Research/AES/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+20:34:10 INFO  : Copied contents of D:/Research/AES/project_1.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+20:34:19 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:34:25 INFO  : 
+20:34:25 INFO  : Updating hardware inferred compiler options for aes_test.
+20:34:25 INFO  : Clearing existing target manager status.
+20:34:28 INFO  : Closing and re-opening the MSS file of ther project aes_test_bsp
+20:34:29 INFO  : Closing and re-opening the MSS file of ther project aes_test_bsp
+20:34:30 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:34:30 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:39:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:39:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248570937" && level==0} -index 1' command is executed.
+20:39:19 INFO  : FPGA configured successfully with bitstream "D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:48:15 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:11:25 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:11:29 INFO  : XSDB server has started successfully.
+11:11:32 INFO  : Processing command line option -hwspec D:/Research/AES/project_1.sdk/design_1_wrapper.hdf.
+11:11:33 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:12:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+11:12:13 INFO  : FPGA configured successfully with bitstream "D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:16:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+11:16:34 INFO  : 'fpga -state' command is executed.
+11:16:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:16:34 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:16:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+11:16:35 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:16:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+11:16:38 INFO  : 'stop' command is executed.
+11:17:22 ERROR : 'ps7_init' is cancelled.
+11:17:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+11:18:21 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:18:23 INFO  : XSDB server has started successfully.
+11:18:25 INFO  : Processing command line option -hwspec D:/Research/AES/project_1.sdk/design_1_wrapper.hdf.
+11:18:27 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:20:12 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:20:14 INFO  : XSDB server has started successfully.
+11:20:15 INFO  : Processing command line option -hwspec D:/Research/AES/project_1.sdk/design_1_wrapper.hdf.
+11:20:15 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:34:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+12:34:57 INFO  : 'fpga -state' command is executed.
+12:34:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:34:57 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:34:58 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"". available targets:
+  1  DAP (JTAG port open error. AP transaction error, DAP status f0000021)
+  2* xc7z020
+12:34:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+----------------End of Script----------------
+
+12:35:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:35:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+12:35:10 ERROR : Cannot find memory context of target ARM_DAP
+12:36:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:36:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+12:36:04 ERROR : Cannot find memory context of target ARM_DAP
+13:20:55 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:20:59 INFO  : XSDB server has started successfully.
+13:21:02 INFO  : Processing command line option -hwspec D:/Research/AES/project_1.sdk/design_1_wrapper.hdf.
+13:21:03 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:21:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:21:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:21:24 INFO  : FPGA configured successfully with bitstream "D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:21:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:21:52 INFO  : 'fpga -state' command is executed.
+13:21:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:21:53 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:21:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:21:53 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:21:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:21:54 INFO  : 'stop' command is executed.
+13:21:54 INFO  : 'ps7_init' command is executed.
+13:21:55 INFO  : 'ps7_post_config' command is executed.
+13:21:55 INFO  : 'con' command is executed.
+13:21:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:21:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:56 INFO  : The application 'D:/Research/AES/project_1.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:21:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/helloworld/Debug/helloworld.elf
+----------------End of Script----------------
+
+13:21:56 INFO  : Memory regions updated for context APU
+13:21:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:57 INFO  : 'con' command is executed.
+13:21:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:22:09 INFO  : Disconnected from the channel tcfchan#1.
+13:22:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:22:09 INFO  : 'fpga -state' command is executed.
+13:22:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:10 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:22:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:22:10 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:22:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:22:11 INFO  : 'stop' command is executed.
+13:22:13 INFO  : 'ps7_init' command is executed.
+13:22:13 INFO  : 'ps7_post_config' command is executed.
+13:22:13 INFO  : 'con' command is executed.
+13:22:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:22:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:14 INFO  : The application 'D:/Research/AES/project_1.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:22:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/helloworld/Debug/helloworld.elf
+----------------End of Script----------------
+
+13:22:14 INFO  : Memory regions updated for context APU
+13:22:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:22:14 INFO  : 'con' command is executed.
+13:22:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:24:57 INFO  : Disconnected from the channel tcfchan#2.
+13:24:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:24:58 INFO  : 'fpga -state' command is executed.
+13:24:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:24:58 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:24:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:24:59 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:24:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:24:59 INFO  : 'stop' command is executed.
+13:25:01 INFO  : 'ps7_init' command is executed.
+13:25:01 INFO  : 'ps7_post_config' command is executed.
+13:25:01 INFO  : 'con' command is executed.
+13:25:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:25:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:02 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:25:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:25:02 INFO  : Memory regions updated for context APU
+13:25:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:02 INFO  : 'con' command is executed.
+13:25:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:25:21 INFO  : Disconnected from the channel tcfchan#3.
+13:25:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:25:22 INFO  : 'fpga -state' command is executed.
+13:25:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:25:22 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:25:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:25:22 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:25:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:25:23 INFO  : 'stop' command is executed.
+13:25:24 INFO  : 'ps7_init' command is executed.
+13:25:24 INFO  : 'ps7_post_config' command is executed.
+13:25:24 INFO  : 'con' command is executed.
+13:25:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:25:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:25 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:25:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:25:25 INFO  : Memory regions updated for context APU
+13:25:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:25:26 INFO  : 'con' command is executed.
+13:25:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:26:15 INFO  : Disconnected from the channel tcfchan#4.
+13:26:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:26:16 INFO  : 'fpga -state' command is executed.
+13:26:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:16 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:26:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:26:16 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:26:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:26:17 INFO  : 'stop' command is executed.
+13:26:18 INFO  : 'ps7_init' command is executed.
+13:26:18 INFO  : 'ps7_post_config' command is executed.
+13:26:18 INFO  : 'con' command is executed.
+13:26:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:26:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:19 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:26:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:26:19 INFO  : Memory regions updated for context APU
+13:26:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:19 INFO  : 'con' command is executed.
+13:26:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:26:28 INFO  : Disconnected from the channel tcfchan#5.
+13:26:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:26:29 INFO  : 'fpga -state' command is executed.
+13:26:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:29 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:26:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:26:30 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:26:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:26:30 INFO  : 'stop' command is executed.
+13:26:31 INFO  : 'ps7_init' command is executed.
+13:26:32 INFO  : 'ps7_post_config' command is executed.
+13:26:32 INFO  : 'con' command is executed.
+13:26:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:26:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:33 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:26:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:26:33 INFO  : Memory regions updated for context APU
+13:26:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:33 INFO  : 'con' command is executed.
+13:26:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:29:46 INFO  : Disconnected from the channel tcfchan#6.
+13:29:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:29:47 INFO  : 'fpga -state' command is executed.
+13:29:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:29:47 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:29:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:29:47 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:29:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:29:48 INFO  : 'stop' command is executed.
+13:29:49 INFO  : 'ps7_init' command is executed.
+13:29:49 INFO  : 'ps7_post_config' command is executed.
+13:29:49 INFO  : 'con' command is executed.
+13:29:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:29:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:29:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:29:50 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:29:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:29:51 INFO  : Memory regions updated for context APU
+13:29:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:29:51 INFO  : 'con' command is executed.
+13:29:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:30:29 INFO  : Disconnected from the channel tcfchan#7.
+13:30:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:30:30 INFO  : 'fpga -state' command is executed.
+13:30:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:30:30 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:30:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:30:30 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:30:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:30:31 INFO  : 'stop' command is executed.
+13:30:32 INFO  : 'ps7_init' command is executed.
+13:30:32 INFO  : 'ps7_post_config' command is executed.
+13:30:32 INFO  : 'con' command is executed.
+13:30:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:30:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:30:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:30:34 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:30:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:30:34 INFO  : Memory regions updated for context APU
+13:30:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:30:34 INFO  : 'con' command is executed.
+13:30:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:32:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:32:59 INFO  : 'fpga -state' command is executed.
+13:32:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:33:00 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:33:00 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:33:00 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:33:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:33:01 INFO  : 'stop' command is executed.
+13:33:02 INFO  : 'ps7_init' command is executed.
+13:33:02 INFO  : 'ps7_post_config' command is executed.
+13:33:02 INFO  : 'con' command is executed.
+13:33:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:33:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:03 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:33:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:33:03 INFO  : Memory regions updated for context APU
+13:33:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:04 INFO  : 'con' command is executed.
+13:33:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:33:12 INFO  : Disconnected from the channel tcfchan#8.
+13:33:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:33:13 INFO  : 'fpga -state' command is executed.
+13:33:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:33:13 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:33:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:33:14 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:33:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:33:14 INFO  : 'stop' command is executed.
+13:33:16 INFO  : 'ps7_init' command is executed.
+13:33:16 INFO  : 'ps7_post_config' command is executed.
+13:33:16 INFO  : 'con' command is executed.
+13:33:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:33:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:17 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:33:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:33:17 INFO  : Memory regions updated for context APU
+13:33:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:17 INFO  : 'con' command is executed.
+13:33:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+13:33:33 INFO  : Disconnected from the channel tcfchan#9.
+13:33:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+13:33:33 INFO  : 'fpga -state' command is executed.
+13:33:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:33:34 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:33:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:33:34 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:33:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+13:33:35 INFO  : 'stop' command is executed.
+13:33:37 INFO  : 'ps7_init' command is executed.
+13:33:37 INFO  : 'ps7_post_config' command is executed.
+13:33:37 INFO  : 'con' command is executed.
+13:33:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:33:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:38 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:33:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+13:33:38 INFO  : Memory regions updated for context APU
+13:33:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:33:38 INFO  : 'con' command is executed.
+13:33:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+14:13:12 INFO  : Disconnected from the channel tcfchan#10.
+14:13:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+14:13:13 INFO  : 'fpga -state' command is executed.
+14:13:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:13:13 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:13:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+14:13:14 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:13:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+14:13:14 INFO  : 'stop' command is executed.
+14:13:16 INFO  : 'ps7_init' command is executed.
+14:13:16 INFO  : 'ps7_post_config' command is executed.
+14:13:16 INFO  : 'con' command is executed.
+14:13:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:13:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:17 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:13:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+14:13:17 INFO  : Memory regions updated for context APU
+14:13:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:17 INFO  : 'con' command is executed.
+14:13:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+14:13:31 INFO  : Disconnected from the channel tcfchan#11.
+14:13:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+14:13:32 INFO  : 'fpga -state' command is executed.
+14:13:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:13:32 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:13:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+14:13:33 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:13:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+14:13:33 INFO  : 'stop' command is executed.
+14:13:35 INFO  : 'ps7_init' command is executed.
+14:13:35 INFO  : 'ps7_post_config' command is executed.
+14:13:35 INFO  : 'con' command is executed.
+14:13:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:13:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:37 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:13:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+14:13:37 INFO  : Memory regions updated for context APU
+14:13:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:37 INFO  : 'con' command is executed.
+14:13:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+14:17:19 INFO  : Disconnected from the channel tcfchan#12.
+14:17:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248571834" && level==0} -index 1' command is executed.
+14:17:19 INFO  : 'fpga -state' command is executed.
+14:17:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:17:19 INFO  : Sourcing of 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:17:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+14:17:20 INFO  : Hardware design information is loaded from 'D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:17:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0' command is executed.
+14:17:20 INFO  : 'stop' command is executed.
+14:17:21 INFO  : 'ps7_init' command is executed.
+14:17:21 INFO  : 'ps7_post_config' command is executed.
+14:17:22 INFO  : 'con' command is executed.
+14:17:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:17:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:23 INFO  : The application 'D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:17:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+loadhw D:/Research/AES/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+dow D:/Research/AES/project_1.sdk/aes_test/Debug/aes_test.elf
+----------------End of Script----------------
+
+14:17:23 INFO  : Memory regions updated for context APU
+14:17:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:23 INFO  : 'con' command is executed.
+14:17:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248571834"} -index 0
+con
+----------------End of Script----------------
+
+14:18:40 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 729 xsdb eval "disconnect tcfchan#8"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+14:18:41 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 730 xsdb eval "disconnect tcfchan#13"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
